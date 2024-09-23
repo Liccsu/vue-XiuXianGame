@@ -1,0 +1,17 @@
+{
+    "apps": [
+        {
+            "name": "xiuxian-game",
+            "script": "serve",
+            "args": "-s dist -l 3000",
+            "instances": 1,
+            "autorestart": true,
+            "watch": ["dist"],
+            "max_memory_restart": "512M",
+            "restart_delay": 60000,
+            "env": {
+                "NODE_ENV": "production"
+            }
+        }
+    ]
+}
